@@ -47,7 +47,7 @@ center_content: true
 ---
 
 
-I'm a second-year PhD student at Electrical and Computer Engineering (ECE), Georgia Tech advised by [Prof. Tushar Krishna](https://tusharkrishna.ece.gatech.edu). My research broadly involves computer architecture with a primary focus on systolic accelerator simulation tools, design and exploration for general-purpose, agentic and neuro-symbolic AI workloads.
+I'm a third-year PhD student at Electrical and Computer Engineering (ECE), Georgia Tech advised by [Prof. Tushar Krishna](https://tusharkrishna.ece.gatech.edu). My research broadly involves computer architecture with a primary focus on systolic accelerator simulation tools, design and exploration for general-purpose, agentic and neuro-symbolic AI workloads.
 
 I received my Bachelor’s in Technology (BTech) with distrinction in Electronics and Communication Engineering (ECE) from Indian Institute of Technology (IIT), Roorkee, India in 2023, where I served as the student representative in the Department Academic Program Committe.
 <div align="center" markdown="1">
