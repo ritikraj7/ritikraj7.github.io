@@ -37,7 +37,7 @@ entries:
     type: Presentation
     content: >-
       Presented our work [CogSys](https://ieeexplore.ieee.org/document/10946710) at [HPCA 2025](https://hpca-conf.org/2025/) in Las Vegas.
-  - date: 2024-13-02
+  - date: 2025-03-02
     type: Paper
     content: >-
       Our paper [SCALE-Sim v3: A modular cycle-accurate systolic accelerator simulator for end-to-end system analysis](https://ieeexplore.ieee.org/document/11096402) got accepted at ISPASS 2025.   
@@ -45,7 +45,7 @@ entries:
     type: Presentation
     content: >-
       Presented our work titled "Metaheuristics and Workload-Aware Design Space Exploration for CPUs" at [SRC, MICRO 2025](https://www.microarch.org/micro58/submit/src.php) in Austin.
-  - date: 2024-13-02
+  - date: 2024-11-02
     type: Paper
     content: >-
       Our paper [CogSys: Efficient and Scalable Neurosymbolic Cognition System via Algorithm-Hardware Co-Design](https://ieeexplore.ieee.org/document/11096402) got accepted at HPCA 2025.   
