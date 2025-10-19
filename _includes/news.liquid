@@ -1,32 +1,77 @@
 <div class="news">
-  {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+  {% assign news_docs = site.news %}
+  {% assign news_entries = '' | split: '' %}
+  {% assign news_size = 0 %}
+
+  {% if news_docs != blank %}
+    {% assign doc_with_entries = nil %}
+    {% for doc in news_docs %}
+      {% if doc.entries %}
+        {% assign doc_with_entries = doc %}
+        {% break %}
       {% endif %}
+    {% endfor %}
+
+    {% if doc_with_entries %}
+      {% assign news_entries = doc_with_entries.entries %}
+      {% assign news_size = news_entries | size %}
+    {% else %}
+      {% assign news_entries = news_docs %}
+      {% assign news_size = news_docs | size %}
+    {% endif %}
+  {% endif %}
+
+  {% if news_size > 0 %}
+    {% assign news_entries = news_entries | sort: 'date' | reverse %}
+    <div
+      class="table-responsive {% if include.limit and page.announcements.scrollable and news_size > 3 %}news-scrollable{% endif %}"
     >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+      <div class="news-list">
+        {% for item in news_entries %}
+          {% if include.limit and page.announcements.limit and forloop.index > page.announcements.limit %}
+            {% break %}
+          {% endif %}
+
+          {% assign month_year = item.date | date: '%B, %Y' %}
+          {% assign news_type = item.type | default: '' %}
+
+          {% assign news_html = nil %}
+          {% assign news_text = nil %}
+          {% assign news_url = nil %}
+
+          {% if item.content %}
+            {% assign news_html = item.content | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip | emojify %}
+          {% elsif item.inline %}
+            {% assign news_html = item.content | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip | emojify %}
+          {% else %}
+            {% assign news_text = item.title | default: '' %}
+          {% endif %}
+
+          {% if item.url %}
+            {% assign news_url = item.url %}
+          {% elsif item.link %}
+            {% assign news_url = item.link %}
+          {% endif %}
+
+          <p class="news-entry">
+            <span class="news-date">{{ month_year }}:</span>
+            {% if news_type != '' %}
+              <span class="news-type news-type-{{ news_type | downcase | replace: ' ', '-' }}">[{{ news_type }}]</span>
+            {% endif %}
+            <span class="news-text">
+              {% if news_html %}
+                {{ news_html }}
               {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% if news_url %}
+                  <a class="news-title" href="{{ news_url | relative_url }}">{{ news_text }}</a>
+                {% else %}
+                  {{ news_text }}
+                {% endif %}
               {% endif %}
-            </td>
-          </tr>
+            </span>
+          </p>
         {% endfor %}
-      </table>
+      </div>
     </div>
   {% else %}
     <p>No news so far...</p>

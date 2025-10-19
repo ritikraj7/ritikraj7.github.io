@@ -2,76 +2,109 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
-  <article>
+  <section id="intro" class="page-section">
+  <header class="post-header about-header d-flex flex-column flex-md-row align-items-start justify-content-center text-center text-md-left">
+    <div class="about-header-text flex-fill">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+      <div class="about-intro markdown-body mt-3">{{ content }}</div>
+    </div>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+  <div class="about-header-profile flex-shrink-0 ml-md-4 mt-3 mt-md-0 text-md-right" style="max-width: 240px;">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle about-profile-img w-100' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded about-profile-img w-100' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.28 }}px, (min-width: 576px) 28vw, 65vw{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <div class="more-info mt-2">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
     {% endif %}
+  </header>
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
+  <article>
 
-    <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section id="news" class="page-section">
+        <h2>
+          News
+        </h2>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
-    <!-- Latest posts -->
+    {% if page.show_publications %}
+      <section id="publications" class="page-section publications-section mt-5">
+        <h2>Publications (since 2024) <small class="text-muted">* Equal contribution</small></h2>
+        {% if page.publications_intro %}
+          <div class="publications-intro">{{ page.publications_intro | markdownify }}</div>
+        {% endif %}
+        <div class="publications">
+          {% if page.publication_query %}
+            {% bibliography --template bib --query page.publication_query %}
+          {% else %}
+            {% bibliography --template bib %}
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% assign has_activities = page.activities and page.activities.size > 0 %}
+    {% if has_activities or page.activities_intro %}
+      <section id="activities" class="page-section">
+        {% if page.activities_intro %}
+          <div class="activities-intro">{{ page.activities_intro | markdownify }}</div>
+        {% endif %}
+        {% if has_activities %}
+          <div class="activities">
+            {% for group in page.activities %}
+              <div class="activity-group">
+                {% if group.title %}
+                  <h3>{{ group.title }}</h3>
+                {% endif %}
+                {% if group.items %}
+                  <ul>
+                    {% for item in group.items %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                {% elsif group.content %}
+                  {{ group.content | markdownify }}
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </section>
+    {% endif %}
+
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section id="posts" class="page-section">
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+    <p class="last-updated text-muted mt-4">last updated {{ page.last_updated | default: site.time | date: "%B %d, %Y" }}</p>
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}

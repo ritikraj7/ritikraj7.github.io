@@ -1,115 +1,129 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{wan2024towards,
+  title={Towards cognitive ai systems: Workload and characterization of neuro-symbolic ai},
+  author={Wan, Zishen and Liu, Che-Kai and Yang, Hanchen and Raj, Ritik and Li, Chaojian and You, Haoran and Fu, Yonggan and Wan, Cheng and Samajdar, Ananda and Lin, Yingyan Celine and others},
+  booktitle={2024 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+  pages={268--279},
+  year={2024},
+  abstract={The remarkable advancements in artificial intelligence (AI), primarily driven by deep neural networks, are facing challenges surrounding unsustainable computational trajectories, limited robustness, and a lack of explainability. To develop next-generation cognitive AI systems, neuro-symbolic AI emerges as a promising paradigm, fusing neural and symbolic approaches to enhance interpretability, robustness, and trustworthiness, while facilitating learning from much less data. Recent neuro-symbolic systems have demonstrated great potential in collaborative human-AI scenarios with reasoning and cognitive capabilities. In this paper, we aim to understand the workload characteristics and potential architectures for neuro-symbolic AI. We first systematically categorize neuro-symbolic AI algorithms, and then experimentally evaluate and analyze them in terms of runtime, memory, computational operators, sparsity, and system characteristics on CPUs, GPUs, and edge SoCs. Our studies reveal that neuro-symbolic models suffer from inefficiencies on off-the-shelf hardware, due to the memory-bound nature of vector-symbolic and logical operations, complex flow control, data dependencies, sparsity variations, and limited scalability. Based on profiling insights, we suggest cross-layer optimization solutions and present a hardware acceleration case study for vector-symbolic architecture to improve the performance, efficiency, and scalability of neuro-symbolic computing. Finally, we discuss the challenges and potential future directions of neuro-symbolic AI from both system and architectural perspectives.},
+  organization={IEEE},
+  pdf={https://ieeexplore.ieee.org/document/10590020},
+  sort_position={1}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{kashani2024475,
+  title={A 475 MHz Manycore FPGA Accelerator for RTL Simulation},
+  author={Kashani, Sahand and Emami, Mahyar and Kamahori, Keisuke and Pourghannad, Sepehr and Raj, Ritik and Larus, James R},
+  booktitle={Proceedings of the 2024 ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+  pages={78--84},
+  year={2024},
+  pdf={https://dl.acm.org/doi/abs/10.1145/3626202.3637579},
+  abstract={This paper presents the implementation of Manticore: a manycore accelerator for parallel RTL simulation. Manticore packs up to 225 custom soft processors running at 475 MHz on a large FPGA. Implementing manycore accelerators on FPGAs is challenging as designers must reconcile the conflicting goals of maximizing the number of cores on the chip and clocking them at the highest possible frequency. Designers face two classes of constraints: (1) architectural constraints imposed by a large FPGA's multi-die structure, and (2) physical constraints imposed by the FPGA shell's size and placement. Physical design therefore plays a critical role in the implementation of manycore accelerators. We present physical design challenges faced during Manticore's implementation on the AMD Alveo U200 card---a large FPGA with a poorly-placed, wide shell that challenges physical implementation.},
+  sort_position={3}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@article{bambhaniya2024demystifying,
+  title={Demystifying platform requirements for diverse llm inference use cases},
+  author={Bambhaniya, Abhimanyu and Raj, Ritik and Jeong, Geonhwa and Kundu, Souvik and Srinivasan, Sudarshan and Elavazhagan, Midhilesh and Kumar, Madhu and Krishna, Tushar},
+  journal={arXiv e-prints},
+  pages={arXiv--2406},
+  pdf={https://arxiv.org/abs/2406.01698},
+  abstract={Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and network resources. With constant innovation in LLM serving optimizations and model architecture evolving at breakneck speed, the hardware requirements to meet Service Level Objectives (SLOs) remain an open research question. To answer the question, we present an analytical tool, GenZ, to efficiently navigate the relationship between diverse LLM model architectures(Dense, GQA, MoE, Mamba), LLM serving optimizations(Chunking, Speculative decoding, quanitization), and AI platform design parameters. Our tool estimates LLM inference performance metrics for the given scenario. We have validated against real hardware platforms running various different LLM models, achieving a max geomean error of this http URL use GenZ to identify compute, memory capacity, memory bandwidth, network latency, and network bandwidth requirements across diverse LLM inference use cases. We also study diverse architectural choices in use today (inspired by LLM serving platforms from several vendors) to help inform computer architects designing next-generation AI hardware accelerators and platforms. The trends and insights derived from GenZ can guide AI engineers deploying LLMs as well as computer architects designing next-generation hardware accelerators and platforms. Ultimately, this work sheds light on the platform design considerations for unlocking the full potential of large language models across a spectrum of applications},
+  year={2024},
+  sort_position={0}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+
+
+@article{wan2024towards,
+  title={Towards efficient neuro-symbolic ai: From workload characterization to hardware architecture},
+  author={Wan, Zishen and Liu, Che-Kai and Yang, Hanchen and Raj, Ritik and Li, Chaojian and You, Haoran and Fu, Yonggan and Wan, Cheng and Li, Sixu and Kim, Youbin and others},
+  journal={IEEE Transactions on Circuits and Systems for Artificial Intelligence},
+  volume={1},
+  pdf={https://ieeexplore.ieee.org/document/10682967},
+  abstract={The remarkable advancements in artificial intelligence (AI), primarily driven by deep neural networks, are facing challenges surrounding unsustainable computational trajectories, limited robustness, and a lack of explainability. To develop next-generation cognitive AI systems, neuro-symbolic AI emerges as a promising paradigm, fusing neural and symbolic approaches to enhance interpretability, robustness, and trustworthiness, while facilitating learning from much less data. Recent neuro-symbolic systems have demonstrated great potential in collaborative human-AI scenarios with reasoning and cognitive capabilities. In this paper, we aim to understand the workload characteristics and potential architectures for neuro-symbolic AI. We first systematically categorize neuro-symbolic AI algorithms, and then experimentally evaluate and analyze them in terms of runtime, memory, computational operators, sparsity, and system characteristics on CPUs, GPUs, and edge SoCs. Our studies reveal that neuro-symbolic models suffer from inefficiencies on off-the-shelf hardware, due to the memory-bound nature of vector-symbolic and logical operations, complex flow control, data dependencies, sparsity variations, and limited scalability. Based on profiling insights, we suggest cross-layer optimization solutions and present a hardware acceleration case study for vector-symbolic architecture to improve the performance, efficiency, and scalability of neuro-symbolic computing. Finally, we discuss the challenges and potential future directions of neuro-symbolic AI from both system and architectural perspectives.},
+  number={1},
+  pages={53--68},
+  year={2024},
+  publisher={IEEE},
+  sort_position={2}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{nayan2025axon,
+  title={Axon: A novel systolic array architecture for improved run time and energy efficient GeMM and Conv operation with on-chip im2col},
+  author={Nayan, Md Mizanur Rahaman and Raj, Ritik and Shaik, Gouse Basha and Krishna, Tushar and Naeemi, Azad J},
+  booktitle={2025 Design, Automation \& Test in Europe Conference (DATE)},
+  pages={1--7},
+  year={2025},
+  pdf={https://ieeexplore.ieee.org/abstract/document/10992860},
+  abstract={General matrix multiplication (GeMM) is a core operation in virtually all AI applications. Systolic array (SA) based architectures have shown great promise as GeMM hardware accelerators thanks to their speed and energy efficiency. Unfortunately, SAs incur a linear delay in filling the operands, due to unidirectional propogation via pipeline latches. In this work, we propose a novel in-array data orchestration technique in SAs where we enable data feeding on the principal diagonal followed by bi-directional propagation. This improves the runtime by up to 2 × at minimal hardware overhead. In addition, the proposed data orchestration enables convolution lowering (known as im2col) using a simple hardware support to fully exploit input feature map reuse opportunity and significantly lower the off-chip memory traffic resulting in 1.2 ×throughput improvement and 2.17 × inference energy reduction during YOLOv3 and RESNET50 workload on average. In contrast, conventional data orchestration would require more elaborate hardware and control signals to implement im2col in hardware because of the data skew. We have synthesized and conducted place and route for 16×16 systolic arrays based on the novel and conventional orchestrations using ASAP 7nm PDK and found that our proposed approach results in 0.211% area and 1.6% power overheads.},
+  organization={IEEE},
+  sort_position={4}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{wan2025cogsys,
+  title={Cogsys: Efficient and scalable neurosymbolic cognition system via algorithm-hardware co-design},
+  author={Wan*, Zishen and Yang*, Hanchen and Raj*, Ritik and Liu, Che-Kai and Samajdar, Ananda and Raychowdhury, Arijit and Krishna, Tushar},
+  booktitle={2025 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
+  pages={775--789},
+  abstract={Neurosymbolic AI is an emerging compositional paradigm that fuses neural learning with symbolic reasoning to enhance the transparency, interpretability, and trustworthiness of AI. It also exhibits higher data efficiency making it promising for edge deployments. Despite the algorithmic promises and demonstrations, unfortunately executing neurosymbolic workloads on current hardware (CPU/GPU/TPU) is challenging due to higher memory intensity, greater compute heterogeneity and access pattern irregularity, leading to severe hardware underutilization. This work proposes CogSys, a characterization and co-design framework dedicated to neurosymbolic AI system acceleration, aiming to win both reasoning efficiency and scalability. On the algorithm side, CogSys proposes an efficient factorization technique to alleviate compute and memory overhead. On the hardware side, CogSys proposes a scalable neurosymbolic architecture with reconfigurable neuro/symbolic processing elements (nsPE) and bubble streaming (BS) dataflow with spatial-temporal (ST) mapping for highly parallel and efficient neurosymbolic computation. On the system side, CogSys features an adaptive workload-aware scheduler (adSCH) to orchestrate heterogeneous kernels and enhance resource utilization. Evaluated across cognitive workloads, CogSys enables reconfigurable support for neural and symbolic kernels and exhibits >75x speedup over TPU-like systolic array with only <5% area overhead, as benchmarked under the TSMC 28nm technology node. CogSys achieves 4x 96x speedup compared to desktop and edge GPUs. For the first time, CogSys enables real-time abduction reasoning towards human fluid intelligence, requiring only 0.3 s per reasoning task with 4 mm2 area and 1.48 W power consumption.},
+  pdf={https://ieeexplore.ieee.org/abstract/document/10946710},
+  year={2025},
+  organization={IEEE},
+  sort_position={5}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{raj2025scale,
+  title={SCALE-Sim v3: A modular cycle-accurate systolic accelerator simulator for end-to-end system analysis},
+  author={Raj, Ritik and Banerjee*, Sarbartha and Chandra*, Nikhil and Wan*, Zishen and Tong*, Jianming and Samajdhar, Ananda and Krishna, Tushar},
+  booktitle={2025 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+  pages={186--200},
+  year={2025},
+  pdf={https://ieeexplore.ieee.org/document/11096402},
+  abstract={The rapid advancements in AI, scientific computing, and high-performance computing (HPC) have driven the need for versatile and efficient hardware accelerators. Existing tools like SCALE-Sim v2 provide valuable cycle-accurate simulations for systolic-array-based architectures but fall short in supporting key modern features such as sparsity, multi-core scalability, and comprehensive memory analysis. To address these limitations, we present SCALE-Sim v3, a modular, cycle-accurate simulator that extends the capabilities of its predecessor. SCALE-Sim v3 introduces five significant enhancements: multi-core simulation with spatio-temporal partitioning and hierarchical memory structures, support for sparse matrix multiplications (SpMM) with layer-wise and row-wise sparsity, integration with Ramulator for detailed DRAM analysis, precise data layout modeling to minimize memory stalls, and energy and power estimation via Accelergy. These improvements enable deeper end-to-end system analysis for modern AI accelerators, accommodating a wide variety of systems and workloads and providing detailed full-system insights into latency, bandwidth, and power efficiency. A 128x128 array is 6.53x faster than a 32x32 array for ViTbase, using only latency as a metric. However, SCALE-Sim v3 finds that 32x32 is 2.86x more energy-efficient due to better utilization and lower leakage energy. For EdP, 64x64 outperforms both 128x128 and 32x32 for ViT-base. SCALE-Sim v2 shows a 21 % reduction in compute cycles for six ResNet18 layers using weight-stationary (WS) dataflow compared to outputstationary (OS). However, when factoring in DRAM stalls, OS dataflow exhibits 30.1% lower execution cycles compared to WS, highlighting the critical role of detailed DRAM analysis.},
+  sort_position={2},
+  organization={IEEE}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{yang2025nsflow,
+  title={NSFlow: An End-to-End FPGA Framework with Scalable Dataflow Architecture for Neuro-Symbolic AI},
+  author={Yang*, Hanchen and Wan*, Zishen and Raj, Ritik and Park, Joongun and Li, Ziwei and Samajdar, Ananda and Raychowdhury, Arijit and Krishna, Tushar},
+  journal={arXiv preprint arXiv:2504.19323},
+  pdf={https://arxiv.org/abs/2504.19323},
+  abstract={Neuro-Symbolic AI (NSAI) is an emerging paradigm that integrates neural networks with symbolic reasoning to enhance the transparency, reasoning capabilities, and data efficiency of AI systems. Recent NSAI systems have gained traction due to their exceptional performance in reasoning tasks and human-AI collaborative scenarios. Despite these algorithmic advancements, executing NSAI tasks on existing hardware (e.g., CPUs, GPUs, TPUs) remains challenging, due to their heterogeneous computing kernels, high memory intensity, and unique memory access patterns. Moreover, current NSAI algorithms exhibit significant variation in operation types and scales, making them incompatible with existing ML accelerators. These challenges highlight the need for a versatile and flexible acceleration framework tailored to NSAI workloads. In this paper, we propose NSFlow, an FPGA-based acceleration framework designed to achieve high efficiency, scalability, and versatility across NSAI systems. NSFlow features a design architecture generator that identifies workload data dependencies and creates optimized dataflow architectures, as well as a reconfigurable array with flexible compute units, re-organizable memory, and mixed-precision capabilities. Evaluating across NSAI workloads, NSFlow achieves 31x speedup over Jetson TX2, more than 2x over GPU, 8x speedup over TPU-like systolic array, and more than 3x over Xilinx DPU. NSFlow also demonstrates enhanced scalability, with only 4x runtime increase when symbolic workloads scale by 150x. To the best of our knowledge, NSFlow is the first framework to enable real-time generalizable NSAI algorithms acceleration, demonstrating a promising solution for next-generation cognitive systems.},
+  year={2025},
+  sort_position={3}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{raj2025mcmcomm,
+  title={MCMComm: Hardware-Software Co-Optimization for End-to-End Communication in Multi-Chip-Modules},
+  author={Raj*, Ritik and Lin*, Shengjie and Won, William and Krishna, Tushar},
+  journal={arXiv preprint arXiv:2505.00041},
+  pdf={https://arxiv.org/abs/2505.00041},
+  abstract={Increasing AI computing demands and slowing transistor scaling have led to the advent of Multi-Chip-Module (MCMs) based accelerators. MCMs enable cost-effective scalability, higher yield, and modular reuse by partitioning large chips into smaller chiplets. However, MCMs come at an increased communication cost, which requires critical analysis and optimization. This paper makes three main contributions: (i) an end-to-end, off-chip congestion-aware and packaging-adaptive analytical framework for detailed analysis, (ii) hardware software co-optimization incorporating diagonal links, on-chip redistribution, and non-uniform workload partitioning to optimize the framework, and (iii) using metaheuristics (genetic algorithms, GA) and mixed integer quadratic programming (MIQP) to solve the optimized framework. Experimental results demonstrate significant performance improvements for CNNs and Vision Transformers, showcasing up to 1.58x and 2.7x EdP (Energy delay Product) improvement using GA and MIQP, respectively.},
+  year={2025},
+  sort_position={1}
+}
+
+@article{raj2025onedse,
+  title={OneDSE: A Unified Microprocessor Metric Prediction and Design Space Exploration Framework},
+  author={Raj, Ritik and Ramachandran, Akshat and Nye, Jeff and Nemawarkar, Shashank and Krishna, Tushar},
+  journal={arXiv preprint arXiv:2505.03771},
+  pdf={https://arxiv.org/abs/2505.03771},
+  abstract={With the slowing of Moores Law and increasing impact of power constraints, processor designs rely on architectural innovation to achieve differentiating performance. However, the innovation complexity has simultaneously increased the design space of modern high performance processors. Specifically, we identify two key challenges in prior Design Space Exploration (DSE) approaches for modern CPU design - (a) cost model (prediction method) is either slow or microarchitecture-specific or workload-specific and single model is inefficient to learn the whole design space (b) optimization (exploration method) is slow and inaccurate in the large CPU parameter space. This work presents a novel solution called OneDSE to address these emerging challenges in modern CPU design. OneDSE is a unified cost model (metric predictor) and optimizer (CPU parameter explorer) with three key techniques - 1. Transformer-based workload-Aware CPU Estimation (TrACE) framework to predict metrics in the parameter space (TrACE-p) and parameters in the in the metric space (TrACE-m). TrACE-p outperforms State of The Art (SOTA) IPC prediction methods by 5.71x and 28x for single and multiple workloads respectively while being two orders of magnitude faster. 2. We also propose a novel Metric spAce Search opTimizer (MAST) that leverages TrACE-m and outperforms SoTA metaheuristics by 1.19x while being an order of magnitude faster. 3. We propose Subsystem-based Multi-Agent Reinforcement-learning based fine-Tuning (SMART)-TrACE that achieves a 10.6% reduction in prediction error compared to TrACE, enabling more accurate and efficient exploration of the CPU design space.},
+  sort_position={0},
+  year={2025}
+}
+
+@inproceedings{wan2025efficient,
+  title={Efficient Processing of Neuro-Symbolic AI: A Tutorial and Cross-Layer Co-Design Case Study},
+  author={Wan, Zishen and Liu, Che-Kai and Yang, Hanchen and Raj, Ritik and Raychowdhury, Arijit and Krishna, Tushar},
+  year={2025},
+  pdf={https://proceedings.mlr.press/v288/wan25a.html},
+  abstract={While neural-based models have driven recent breakthroughs in artificial intelligence (AI), they face critical challenges in unsustainable computational demands, limited robustness, and lack of interpretability. Neuro-symbolic (NeSy) AI has emerged as a promising paradigm that integrates neural learning and symbolic reasoning to enhance explainability, robustness, and data efficiency. Recent NeSy systems demonstrated strong potential in reasoning and trustworthy decision-making tasks, making them particularly suitable for cognitive human-AI applications. This tutorial presents a vertically integrated approach on the efficient processing of NeSy AI, bridging workload characteristics with system and hardware co-design. We begin by systematically categorizing NeSy workloads and analyzing their computational and memory demands to expose performance bottlenecks and optimization opportunities. Building on these insights, we focus on a class of vector-symbolic architecture-based NeSy systems and present a series of hardware case studies, including processing element microarchitecture, dataflow, FPGA design, and system-on- chip prototype. Our results highlight the efficiency and scalability improvements of NeSy systems, with the integration of application discovery, systems thinking, and co-design intelligence.},
+  booktitle={2nd International Conference on Neuro-symbolic Systems (NeuS)},
+  sort_position={7}
 }
