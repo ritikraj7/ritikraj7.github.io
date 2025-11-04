@@ -1,6 +1,10 @@
 ---
 layout: none
 entries:
+  - date: 2025-11-03
+    type: Paper
+    content: >-
+      Our paper [A CPU Centric Perspective on Agentic AI](https://arxiv.org/pdf/2511.00739) is posted to ArXiv.
   - date: 2025-10-01
     type: Presentation
     content: >-
