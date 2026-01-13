@@ -1,6 +1,10 @@
 ---
 layout: none
 entries:
+  - date: 2026-01-13
+    type: Award
+    content: >-
+      I am grateful and humbled to receive the IBM PhD Fellowhip Award 2026.
   - date: 2025-11-03
     type: Paper
     content: >-
