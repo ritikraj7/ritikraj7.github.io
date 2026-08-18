@@ -92,6 +92,28 @@ body.sticky-bottom-footer {
   padding-right: 0.5rem;
 }
 
+// News entry type tags. Each type gets its own hue, with brighter variants in
+// dark mode so the tags stay legible on the dark background.
+:root {
+  --news-type-paper: #9333ea;
+  --news-type-poster: #db2777;
+  --news-type-talk: #0d9488;
+  --news-type-presentation: #2563eb;
+  --news-type-tutorial: #16a34a;
+  --news-type-career: #ea580c;
+  --news-type-award: #ca8a04;
+}
+
+html[data-theme="dark"] {
+  --news-type-paper: #c084fc;
+  --news-type-poster: #f472b6;
+  --news-type-talk: #2dd4bf;
+  --news-type-presentation: #60a5fa;
+  --news-type-tutorial: #4ade80;
+  --news-type-career: #fb923c;
+  --news-type-award: #fbbf24;
+}
+
 .news-type {
   font-weight: 600;
   color: var(--global-theme-color);
@@ -100,19 +122,31 @@ body.sticky-bottom-footer {
 }
 
 .news-type-paper {
-  color: #b23cfd;
+  color: var(--news-type-paper);
 }
 
-.news-type-presentation {
-  color: #0d6efd;
+.news-type-poster {
+  color: var(--news-type-poster);
 }
 
 .news-type-talk {
-  color: #20c997;
+  color: var(--news-type-talk);
+}
+
+.news-type-presentation {
+  color: var(--news-type-presentation);
+}
+
+.news-type-tutorial {
+  color: var(--news-type-tutorial);
 }
 
 .news-type-career {
-  color: #fd7e14;
+  color: var(--news-type-career);
+}
+
+.news-type-award {
+  color: var(--news-type-award);
 }
 
 // Profile
