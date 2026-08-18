@@ -1,6 +1,42 @@
 ---
 layout: none
 entries:
+  - date: 2026-08-17
+    type: Poster
+    content: >-
+      Our poster titled "MAKCI: A Multi-Abstraction AI Kernel Cost Instrumentor for Performance Modeling in AI Compiler" got accepted for [PyTorch Conference 2026](https://events.linuxfoundation.org/pytorch-conference-north-america/).  
+  - date: 2026-07-27
+    type: Paper
+    content: >-
+      Our paper [TRACE-ROUTER: Task-Consistent and Adaptive Online Routing for Agentic AI](https://arxiv.org/abs/2607.22465) is posted to ArXiv.
+  - date: 2026-06-28
+    type: Tutorial
+    content: >-
+      We hosted a tutorial on [SCALE-Sim Across the Silicon Lifecycle](https://scalesim-project.github.io/tutorial-isca2026.html) at [ISCA 2026]https://iscaconf.org/isca2026/) in Raleigh, NC.
+  - date: 2026-05-26
+    type: Career
+    content: >-
+      Started as Software Engineer Intern - AI Accelerators Research at IBM Research.
+  - date: 2026-05-22
+    type: Talk
+    content: >-
+      Presented our work [Towards Understanding, Analyzing, and Optimizing Agentic AI Execution: A CPU-Centric Perspective](https://arxiv.org/pdf/2511.00739) virtually to Nvidia Networking SW Architecture group.
+  - date: 2026-04-16
+    type: Paper
+    content: >-
+      Our paper new version [Towards Understanding, Analyzing, and Optimizing Agentic AI Execution: A CPU-Centric Perspective](https://arxiv.org/pdf/2511.00739) is posted to ArXiv.  
+  - date: 2026-03-24
+    type: Poster
+    content: >-
+      Presented a poster on our ongoing work titled "BASIT: Optimizing Neurosymbolic AI on Intel NPUs" at COCOSYS Annual Review meeting (SRC JUMP 2.0) in Atlanta.
+  - date: 2026-03-23
+    type: Paper
+    content: >-
+      Our paper [SCALE-Sim TPU: Validating and Extending SCALE-Sim for TPUs](https://arxiv.org/abs/2603.22535) is posted to ArXiv.
+  - date: 2026-03-22
+    type: Paper
+    content: >-
+      Our paper [Compositional AI Beyond LLMs](https://dl.acm.org/doi/abs/10.1145/3760250.3762235) is published in [ASPLOS 2026](https://www.asplos-conference.org/asplos2026/index.html).
   - date: 2026-01-13
     type: Award
     content: >-
@@ -10,9 +46,9 @@ entries:
     content: >-
       Our paper [A CPU Centric Perspective on Agentic AI](https://arxiv.org/pdf/2511.00739) is posted to ArXiv.
   - date: 2025-10-01
-    type: Presentation
+    type: Poster
     content: >-
-      Presented our work [SCALE-Sim v3](https://ieeexplore.ieee.org/document/11096402) at ACE Annual Review meeting (SRC JUMP 2.0) in Chicago.
+      Presented a poster on our work [SCALE-Sim v3](https://ieeexplore.ieee.org/document/11096402) at ACE Annual Review meeting (SRC JUMP 2.0) in Chicago.
   - date: 2025-08-13
     type: Talk
     content: >-
@@ -38,9 +74,9 @@ entries:
     content: >-
       Our paper [OneDSE: A Unified Microprocessor Metric Prediction and Design Space Exploration Framework](https://arxiv.org/abs/2505.03771) is posted to Arxiv.
   - date: 2025-03-01
-    type: Presentation
+    type: Poster
     content: >-
-      Presented our work [CogSys](https://ieeexplore.ieee.org/document/10946710) at COCOSYS Annual Review meeting (SRC JUMP 2.0) in Atlanta.
+      Presented a poster on our work [CogSys](https://ieeexplore.ieee.org/document/10946710) at COCOSYS Annual Review meeting (SRC JUMP 2.0) in Atlanta.
   - date: 2025-03-01
     type: Presentation
     content: >-
@@ -50,9 +86,9 @@ entries:
     content: >-
       Our paper [SCALE-Sim v3: A modular cycle-accurate systolic accelerator simulator for end-to-end system analysis](https://ieeexplore.ieee.org/document/11096402) got accepted at ISPASS 2025.   
   - date: 2024-11-01
-    type: Presentation
+    type: Poster
     content: >-
-      Presented our work titled "Metaheuristics and Workload-Aware Design Space Exploration for CPUs" at [SRC, MICRO 2025](https://www.microarch.org/micro58/submit/src.php) in Austin.
+      Presented a poster on our work titled "Metaheuristics and Workload-Aware Design Space Exploration for CPUs" at [SRC, MICRO 2025](https://www.microarch.org/micro58/submit/src.php) in Austin.
   - date: 2024-11-02
     type: Paper
     content: >-

@@ -1,56 +1,6 @@
 ---
 ---
 
-@inproceedings{wan2024towards,
-  title={Towards cognitive ai systems: Workload and characterization of neuro-symbolic ai},
-  author={Wan, Zishen and Liu, Che-Kai and Yang, Hanchen and Raj, Ritik and Li, Chaojian and You, Haoran and Fu, Yonggan and Wan, Cheng and Samajdar, Ananda and Lin, Yingyan Celine and others},
-  booktitle={2024 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
-  pages={268--279},
-  year={2024},
-  abstract={The remarkable advancements in artificial intelligence (AI), primarily driven by deep neural networks, are facing challenges surrounding unsustainable computational trajectories, limited robustness, and a lack of explainability. To develop next-generation cognitive AI systems, neuro-symbolic AI emerges as a promising paradigm, fusing neural and symbolic approaches to enhance interpretability, robustness, and trustworthiness, while facilitating learning from much less data. Recent neuro-symbolic systems have demonstrated great potential in collaborative human-AI scenarios with reasoning and cognitive capabilities. In this paper, we aim to understand the workload characteristics and potential architectures for neuro-symbolic AI. We first systematically categorize neuro-symbolic AI algorithms, and then experimentally evaluate and analyze them in terms of runtime, memory, computational operators, sparsity, and system characteristics on CPUs, GPUs, and edge SoCs. Our studies reveal that neuro-symbolic models suffer from inefficiencies on off-the-shelf hardware, due to the memory-bound nature of vector-symbolic and logical operations, complex flow control, data dependencies, sparsity variations, and limited scalability. Based on profiling insights, we suggest cross-layer optimization solutions and present a hardware acceleration case study for vector-symbolic architecture to improve the performance, efficiency, and scalability of neuro-symbolic computing. Finally, we discuss the challenges and potential future directions of neuro-symbolic AI from both system and architectural perspectives.},
-  organization={IEEE},
-  pdf={https://ieeexplore.ieee.org/document/10590020},
-  sort_position={1}
-}
-
-@inproceedings{kashani2024475,
-  title={A 475 MHz Manycore FPGA Accelerator for RTL Simulation},
-  author={Kashani, Sahand and Emami, Mahyar and Kamahori, Keisuke and Pourghannad, Sepehr and Raj, Ritik and Larus, James R},
-  booktitle={Proceedings of the 2024 ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
-  pages={78--84},
-  year={2024},
-  pdf={https://dl.acm.org/doi/abs/10.1145/3626202.3637579},
-  abstract={This paper presents the implementation of Manticore: a manycore accelerator for parallel RTL simulation. Manticore packs up to 225 custom soft processors running at 475 MHz on a large FPGA. Implementing manycore accelerators on FPGAs is challenging as designers must reconcile the conflicting goals of maximizing the number of cores on the chip and clocking them at the highest possible frequency. Designers face two classes of constraints: (1) architectural constraints imposed by a large FPGA's multi-die structure, and (2) physical constraints imposed by the FPGA shell's size and placement. Physical design therefore plays a critical role in the implementation of manycore accelerators. We present physical design challenges faced during Manticore's implementation on the AMD Alveo U200 card---a large FPGA with a poorly-placed, wide shell that challenges physical implementation.},
-  sort_position={3}
-}
-
-
-@article{bambhaniya2024demystifying,
-  title={Demystifying platform requirements for diverse llm inference use cases},
-  author={Bambhaniya, Abhimanyu and Raj, Ritik and Jeong, Geonhwa and Kundu, Souvik and Srinivasan, Sudarshan and Elavazhagan, Midhilesh and Kumar, Madhu and Krishna, Tushar},
-  journal={arXiv e-prints},
-  pages={arXiv--2406},
-  pdf={https://arxiv.org/abs/2406.01698},
-  abstract={Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and network resources. With constant innovation in LLM serving optimizations and model architecture evolving at breakneck speed, the hardware requirements to meet Service Level Objectives (SLOs) remain an open research question. To answer the question, we present an analytical tool, GenZ, to efficiently navigate the relationship between diverse LLM model architectures(Dense, GQA, MoE, Mamba), LLM serving optimizations(Chunking, Speculative decoding, quanitization), and AI platform design parameters. Our tool estimates LLM inference performance metrics for the given scenario. We have validated against real hardware platforms running various different LLM models, achieving a max geomean error of this http URL use GenZ to identify compute, memory capacity, memory bandwidth, network latency, and network bandwidth requirements across diverse LLM inference use cases. We also study diverse architectural choices in use today (inspired by LLM serving platforms from several vendors) to help inform computer architects designing next-generation AI hardware accelerators and platforms. The trends and insights derived from GenZ can guide AI engineers deploying LLMs as well as computer architects designing next-generation hardware accelerators and platforms. Ultimately, this work sheds light on the platform design considerations for unlocking the full potential of large language models across a spectrum of applications},
-  year={2024},
-  sort_position={0}
-}
-
-
-
-@article{wan2024towards,
-  title={Towards efficient neuro-symbolic ai: From workload characterization to hardware architecture},
-  author={Wan, Zishen and Liu, Che-Kai and Yang, Hanchen and Raj, Ritik and Li, Chaojian and You, Haoran and Fu, Yonggan and Wan, Cheng and Li, Sixu and Kim, Youbin and others},
-  journal={IEEE Transactions on Circuits and Systems for Artificial Intelligence},
-  volume={1},
-  pdf={https://ieeexplore.ieee.org/document/10682967},
-  abstract={The remarkable advancements in artificial intelligence (AI), primarily driven by deep neural networks, are facing challenges surrounding unsustainable computational trajectories, limited robustness, and a lack of explainability. To develop next-generation cognitive AI systems, neuro-symbolic AI emerges as a promising paradigm, fusing neural and symbolic approaches to enhance interpretability, robustness, and trustworthiness, while facilitating learning from much less data. Recent neuro-symbolic systems have demonstrated great potential in collaborative human-AI scenarios with reasoning and cognitive capabilities. In this paper, we aim to understand the workload characteristics and potential architectures for neuro-symbolic AI. We first systematically categorize neuro-symbolic AI algorithms, and then experimentally evaluate and analyze them in terms of runtime, memory, computational operators, sparsity, and system characteristics on CPUs, GPUs, and edge SoCs. Our studies reveal that neuro-symbolic models suffer from inefficiencies on off-the-shelf hardware, due to the memory-bound nature of vector-symbolic and logical operations, complex flow control, data dependencies, sparsity variations, and limited scalability. Based on profiling insights, we suggest cross-layer optimization solutions and present a hardware acceleration case study for vector-symbolic architecture to improve the performance, efficiency, and scalability of neuro-symbolic computing. Finally, we discuss the challenges and potential future directions of neuro-symbolic AI from both system and architectural perspectives.},
-  number={1},
-  pages={53--68},
-  year={2024},
-  publisher={IEEE},
-  sort_position={2}
-}
 
 @inproceedings{nayan2025axon,
   title={Axon: A novel systolic array architecture for improved run time and energy efficient GeMM and Conv operation with on-chip im2col},
@@ -61,7 +11,7 @@
   pdf={https://ieeexplore.ieee.org/abstract/document/10992860},
   abstract={General matrix multiplication (GeMM) is a core operation in virtually all AI applications. Systolic array (SA) based architectures have shown great promise as GeMM hardware accelerators thanks to their speed and energy efficiency. Unfortunately, SAs incur a linear delay in filling the operands, due to unidirectional propogation via pipeline latches. In this work, we propose a novel in-array data orchestration technique in SAs where we enable data feeding on the principal diagonal followed by bi-directional propagation. This improves the runtime by up to 2 × at minimal hardware overhead. In addition, the proposed data orchestration enables convolution lowering (known as im2col) using a simple hardware support to fully exploit input feature map reuse opportunity and significantly lower the off-chip memory traffic resulting in 1.2 ×throughput improvement and 2.17 × inference energy reduction during YOLOv3 and RESNET50 workload on average. In contrast, conventional data orchestration would require more elaborate hardware and control signals to implement im2col in hardware because of the data skew. We have synthesized and conducted place and route for 16×16 systolic arrays based on the novel and conventional orchestrations using ASAP 7nm PDK and found that our proposed approach results in 0.211% area and 1.6% power overheads.},
   organization={IEEE},
-  sort_position={4}
+  sort_position={18}
 }
 
 @inproceedings{wan2025cogsys,
@@ -73,7 +23,7 @@
   pdf={https://ieeexplore.ieee.org/abstract/document/10946710},
   year={2025},
   organization={IEEE},
-  sort_position={5}
+  sort_position={19}
 }
 
 @inproceedings{raj2025scale,
@@ -84,7 +34,7 @@
   year={2025},
   pdf={https://ieeexplore.ieee.org/document/11096402},
   abstract={The rapid advancements in AI, scientific computing, and high-performance computing (HPC) have driven the need for versatile and efficient hardware accelerators. Existing tools like SCALE-Sim v2 provide valuable cycle-accurate simulations for systolic-array-based architectures but fall short in supporting key modern features such as sparsity, multi-core scalability, and comprehensive memory analysis. To address these limitations, we present SCALE-Sim v3, a modular, cycle-accurate simulator that extends the capabilities of its predecessor. SCALE-Sim v3 introduces five significant enhancements: multi-core simulation with spatio-temporal partitioning and hierarchical memory structures, support for sparse matrix multiplications (SpMM) with layer-wise and row-wise sparsity, integration with Ramulator for detailed DRAM analysis, precise data layout modeling to minimize memory stalls, and energy and power estimation via Accelergy. These improvements enable deeper end-to-end system analysis for modern AI accelerators, accommodating a wide variety of systems and workloads and providing detailed full-system insights into latency, bandwidth, and power efficiency. A 128x128 array is 6.53x faster than a 32x32 array for ViTbase, using only latency as a metric. However, SCALE-Sim v3 finds that 32x32 is 2.86x more energy-efficient due to better utilization and lower leakage energy. For EdP, 64x64 outperforms both 128x128 and 32x32 for ViT-base. SCALE-Sim v2 shows a 21 % reduction in compute cycles for six ResNet18 layers using weight-stationary (WS) dataflow compared to outputstationary (OS). However, when factoring in DRAM stalls, OS dataflow exhibits 30.1% lower execution cycles compared to WS, highlighting the critical role of detailed DRAM analysis.},
-  sort_position={2},
+  sort_position={14},
   organization={IEEE}
 }
 
@@ -95,7 +45,7 @@
   pdf={https://arxiv.org/abs/2504.19323},
   abstract={Neuro-Symbolic AI (NSAI) is an emerging paradigm that integrates neural networks with symbolic reasoning to enhance the transparency, reasoning capabilities, and data efficiency of AI systems. Recent NSAI systems have gained traction due to their exceptional performance in reasoning tasks and human-AI collaborative scenarios. Despite these algorithmic advancements, executing NSAI tasks on existing hardware (e.g., CPUs, GPUs, TPUs) remains challenging, due to their heterogeneous computing kernels, high memory intensity, and unique memory access patterns. Moreover, current NSAI algorithms exhibit significant variation in operation types and scales, making them incompatible with existing ML accelerators. These challenges highlight the need for a versatile and flexible acceleration framework tailored to NSAI workloads. In this paper, we propose NSFlow, an FPGA-based acceleration framework designed to achieve high efficiency, scalability, and versatility across NSAI systems. NSFlow features a design architecture generator that identifies workload data dependencies and creates optimized dataflow architectures, as well as a reconfigurable array with flexible compute units, re-organizable memory, and mixed-precision capabilities. Evaluating across NSAI workloads, NSFlow achieves 31x speedup over Jetson TX2, more than 2x over GPU, 8x speedup over TPU-like systolic array, and more than 3x over Xilinx DPU. NSFlow also demonstrates enhanced scalability, with only 4x runtime increase when symbolic workloads scale by 150x. To the best of our knowledge, NSFlow is the first framework to enable real-time generalizable NSAI algorithms acceleration, demonstrating a promising solution for next-generation cognitive systems.},
   year={2025},
-  sort_position={3}
+  sort_position={15}
 }
 
 @article{raj2025mcmcomm,
@@ -105,19 +55,54 @@
   pdf={https://arxiv.org/abs/2505.00041},
   abstract={Increasing AI computing demands and slowing transistor scaling have led to the advent of Multi-Chip-Module (MCMs) based accelerators. MCMs enable cost-effective scalability, higher yield, and modular reuse by partitioning large chips into smaller chiplets. However, MCMs come at an increased communication cost, which requires critical analysis and optimization. This paper makes three main contributions: (i) an end-to-end, off-chip congestion-aware and packaging-adaptive analytical framework for detailed analysis, (ii) hardware software co-optimization incorporating diagonal links, on-chip redistribution, and non-uniform workload partitioning to optimize the framework, and (iii) using metaheuristics (genetic algorithms, GA) and mixed integer quadratic programming (MIQP) to solve the optimized framework. Experimental results demonstrate significant performance improvements for CNNs and Vision Transformers, showcasing up to 1.58x and 2.7x EdP (Energy delay Product) improvement using GA and MIQP, respectively.},
   year={2025},
-  sort_position={1}
+  sort_position={17}
 }
 
-@article{raj2025agentic,
-  title={A CPU Centric Perspective on Agentic AI},
-  author={Raj, Ritik and Wang, Hong and Krishna, Tushar},
+
+@article{raj2026trace,
+  title={TRACE-ROUTER: Task-Consistent and Adaptive Online Routing for Agentic AI},
+  author={Raj, Ritik and Kundu, Souvik and Banerjee, Sarbartha and Joshi, Dheemanth and Vohra, Ishita and Krishna, Tushar},
+  journal={arXiv preprint arXiv:2607.22465},
+  pdf={https://arxiv.org/abs/2607.22465},
+  abstract={Routing to select large language models (LLMs) with different cost-quality trade-offs has become a fundamental deployment feature of enterprise AI. Existing routers, primarily make independent routing decisions for each LLM call. However, agentic applications execute as long-horizon workflows whose quality is determined only by a delayed, task-level outcome. This mismatch prevents per-call routers from correctly attributing feedback to individual routing decisions. Towards mitigating this, we present TRACE-Router, a task-level routing framework that aligns routing with the unit of supervision. TRACE-Router assigns each task to a model once at admission using a contextual bandit, pins all subsequent LLM calls to the selected backend, and updates its policy using the task's terminal reward, jointly accounting for accuracy and latency. By leveraging delayed task feedback, TRACE-Router learns routing policies that adapt to the workload while avoiding explicit task-complexity estimation. Across three agentic benchmarks, TRACE-Router consistently improves the accuracy-latency trade-off, achieving non-dominated Pareto frontier points. On tau2-Bench, it outperforms latency-matched interpolation between individual models by 7-8 accuracy points, while on Terminal-Bench it achieves 7.1 higher accuracy points than the strongest single model baseline with 36% lower latency.},
+  year={2026},
+  sort_position={10}
+}
+
+@inproceedings{wan2026compositional,
+  title={Compositional ai beyond llms: System implications of neuro-symbolic-probabilistic architectures},
+  author={Wan, Zishen and Yang, Hanchen and Qian, Jiayi and Raj, Ritik and Park, Joongun and Wang, Chenyu and Raychowdhury, Arijit and Krishna, Tushar},
+  booktitle={Proceedings of the 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1},
+  pdf={https://dl.acm.org/doi/abs/10.1145/3760250.3762235},
+  abstract={Large Language Models (LLMs) have driven remarkable progress in artificial intelligence (AI), but their rapid growth faces challenges of unsustainable computation, limited robustness, and poor explainability. Compositional AI, which integrates LLMs with symbolic reasoning and probabilistic inference, has emerged as a promising paradigm to enable interpretability, robustness, trustworthiness, and data-efficient learning. Recent neuro-symbolic-probabilistic systems demonstrate strong potential in agentic applications, advancing reasoning and cognitive capabilities toward human-like intelligence. In this paper, we aim to understand the system implications of neuro-symbolic-probabilistic architectures. We first develop a taxonomy and analyze the scaling efficiency of neuro-symbolic-probabilistic models. We then perform a detailed characterization across CPUs and GPUs, evaluating their runtime, memory, compute operators, dataflow, scalability, communication, and system behaviors. Our studies reveal that compositional models suffer from inefficiencies on off-the-shelf hardware, constrained by heterogeneous compute kernels, irregular memory access, complex flow control, data dependencies, and high data movement. Guided by these insights, we present several software- and system-level optimizations to demonstrate the potential for improving the performance, efficiency, and scalability of neuro-symbolic-probabilistic computing. To our knowledge, this is among the first works to holistically assess compositional neuro-symbolic AI from system and architectural perspectives.},
+  pages={67--84},
+  year={2026},
+  sort_position={13}
+
+}
+
+@article{dang2026scale,
+  title={SCALE-Sim TPU: Validating and Extending SCALE-Sim for TPUs},
+  author={Dang, Jingtian and Raj, Ritik and Man, Changhai and Tong, Jianming and Krishna, Tushar},
+  journal={arXiv preprint arXiv:2603.22535},
+  pdf={https://arxiv.org/abs/2603.22535},
+  abstract={Cycle-accurate simulators are widely used to study systolic accelerators, yet their accuracy and usability are often limited by weak validation against real hardware and poor integration with modern ML compiler stacks. This paper presents SCALE-Sim TPU, a validated and extended version of SCALE-Sim v3 for TPU-style accelerators. Specifically, we make three contributions: (1) We validate SCALE-Sim's systolic GEMM model against measurements on Google TPU v4 and show that simulated cycle counts exhibit a strong linear correlation with hardware latency, enabling a simple cycle-to-latency mapping. (2) We introduce lightweight learned latency models for non-systolic elementwise operations, achieving median relative errors below 3 percent using only tensor size and shape, substantially improving end-to-end latency estimation. (3) We integrate a StableHLO-based frontend that allows workloads from modern ML frameworks such as JAX and PyTorch to be simulated directly via a unified compiler IR. Together, these contributions improve the fidelity, coverage, and practicality of cycle-accurate simulation for whole-model performance analysis on TPUs.},
+  year={2026},
+  sort_position={11}
+}
+
+
+
+@article{raj2025towards,
+  title={Towards Understanding, Analyzing, and Optimizing Agentic AI Execution: A CPU-Centric Perspective},
+  author={Raj, Ritik and Kundu, Souvik and Vohra, Ishita and Wang, Hong and Krishna, Tushar},
   journal={arXiv preprint arXiv:2511.00739},
-  pdf={https://arxiv.org/pdf/2511.00739},
-  abstract={Agentic AI frameworks add a decision-making orchestrator embedded with external tools, including web search, Python interpreter, contextual database, and others, on top of monolithic LLMs, turning them from passive text oracles into autonomous problem-solvers that can plan, call tools, remember past steps, and adapt on the fly. This paper aims to characterize and understand the system bottlenecks introduced by agentic AI workloads from a largely overlooked CPU-centric perspective. We first systematically characterize Agentic AI on the basis of orchestrator/decision making component, inference path dynamics and repetitiveness of the agentic flow which directly influences the system-level performance. Thereafter, based on the characterization, we choose five representative agentic AI workloads- Haystack RAG, Toolformer, ChemCrow, Langchain and SWE-Agent to profile latency, throughput and energy metrics and demystify the significant impact of CPUs on these metrics relative to GPUs. We observe that - 1 Tool processing on CPUs can take up to 90.6% of the total latency; 2 Agentic throughput gets bottlenecked either by CPU factors - coherence, synchronization and over-subscription of cores or GPU factors - main memory capacity and bandwidth; 3 CPU dynamic energy consumes up to 44% of the total dynamic energy at large batch sizes. Based on the profiling insights, we present two key optimizations- 1 CPU and GPU-Aware Micro-batching (CGAM) and 2 Mixed Agentic Workload Scheduling (MAWS) for homogeneous and heterogeneous agentic workloads respectively to demonstrate the potential to improve the performance, efficiency, and scalability of agentic AI. We achieve up to 2.1×and 1.41×P50 latency speedup compared to the multi-processing benchmark for homogeneous and heterogeneous agentic workloads respectively.},
-  year={2025},
-  sort_position={0}
+  pdf={https://arxiv.org/abs/2511.00739},
+  abstract={Agentic AI serving converts monolithic LLM-based inference to autonomous problem-solvers that can plan, call tools, perform reasoning, and adapt on the fly. Due to diverse task execution need, such serving heavily rely on heterogeneous CPU-GPU systems with majority of the external tools responsible for agentic capability, either run on or are orchestrated by the CPU.
+Towards having a deeper understanding of its role, this paper aims to characterize and analyze the system bottlenecks introduced by agentic AI workloads from a largely overlooked CPU-centric perspective. We first present a compile-time characterization of agentic AI execution and choose representative workloads to capture the algorithmic diversity. We then perform runtime characterization of the representative workloads analyzing the end-to-end latency and throughput on two different hardware systems to isolate respective architectural bottlenecks. Based on the insights on the bottlenecks, we finally present two scheduling optimizations, namely, 1. CPU-Aware Overlapped Micro-Batching (COMB) and 2. Mixed Agentic Scheduling (MAS) on homogeneous and heterogeneous agentic workloads, respectively. In specific, these methods optimize for improved CPU-GPU concurrent utilization while reducing skewed resource allocation for heterogeneous execution. Experimental evaluations on the two hardware systems demonstrate the efficacy of COMB in yielding up to 1.7x lower P50 latency in standalone homogeneous workload execution and up to 3.9x/1.8x lower service/total latency under homogeneous open-loop load. Additionally, for heterogeneous open-loop load, MAS can reduce the total latency for minority request-type by up to 2.37x/2.49x at P50/P90 percentile.},
+  year={2026},
+  sort_position={12}
 }
-
 
 @article{raj2025onedse,
   title={OneDSE: A Unified Microprocessor Metric Prediction and Design Space Exploration Framework},
@@ -125,7 +110,7 @@
   journal={arXiv preprint arXiv:2505.03771},
   pdf={https://arxiv.org/abs/2505.03771},
   abstract={With the slowing of Moores Law and increasing impact of power constraints, processor designs rely on architectural innovation to achieve differentiating performance. However, the innovation complexity has simultaneously increased the design space of modern high performance processors. Specifically, we identify two key challenges in prior Design Space Exploration (DSE) approaches for modern CPU design - (a) cost model (prediction method) is either slow or microarchitecture-specific or workload-specific and single model is inefficient to learn the whole design space (b) optimization (exploration method) is slow and inaccurate in the large CPU parameter space. This work presents a novel solution called OneDSE to address these emerging challenges in modern CPU design. OneDSE is a unified cost model (metric predictor) and optimizer (CPU parameter explorer) with three key techniques - 1. Transformer-based workload-Aware CPU Estimation (TrACE) framework to predict metrics in the parameter space (TrACE-p) and parameters in the in the metric space (TrACE-m). TrACE-p outperforms State of The Art (SOTA) IPC prediction methods by 5.71x and 28x for single and multiple workloads respectively while being two orders of magnitude faster. 2. We also propose a novel Metric spAce Search opTimizer (MAST) that leverages TrACE-m and outperforms SoTA metaheuristics by 1.19x while being an order of magnitude faster. 3. We propose Subsystem-based Multi-Agent Reinforcement-learning based fine-Tuning (SMART)-TrACE that achieves a 10.6% reduction in prediction error compared to TrACE, enabling more accurate and efficient exploration of the CPU design space.},
-  sort_position={0},
+  sort_position={16},
   year={2025}
 }
 
@@ -136,5 +121,5 @@
   pdf={https://proceedings.mlr.press/v288/wan25a.html},
   abstract={While neural-based models have driven recent breakthroughs in artificial intelligence (AI), they face critical challenges in unsustainable computational demands, limited robustness, and lack of interpretability. Neuro-symbolic (NeSy) AI has emerged as a promising paradigm that integrates neural learning and symbolic reasoning to enhance explainability, robustness, and data efficiency. Recent NeSy systems demonstrated strong potential in reasoning and trustworthy decision-making tasks, making them particularly suitable for cognitive human-AI applications. This tutorial presents a vertically integrated approach on the efficient processing of NeSy AI, bridging workload characteristics with system and hardware co-design. We begin by systematically categorizing NeSy workloads and analyzing their computational and memory demands to expose performance bottlenecks and optimization opportunities. Building on these insights, we focus on a class of vector-symbolic architecture-based NeSy systems and present a series of hardware case studies, including processing element microarchitecture, dataflow, FPGA design, and system-on- chip prototype. Our results highlight the efficiency and scalability improvements of NeSy systems, with the integration of application discovery, systems thinking, and co-design intelligence.},
   booktitle={2nd International Conference on Neuro-symbolic Systems (NeuS)},
-  sort_position={7}
+  sort_position={20}
 }
