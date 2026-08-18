@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD student at Georgia Tech
+subtitle: PhD student at Georgia Tech, IBM PhD Fellow
 
 profile:
   align: right
