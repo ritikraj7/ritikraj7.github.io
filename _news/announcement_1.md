@@ -1,6 +1,10 @@
 ---
 layout: none
 entries:
+  - date: 2026-08-18
+    type: Paper
+    content: >-
+      A new version of our paper [OneDSE: Metric-Conditioned Inverse Modeling and Active Search for Sample-Efficient DSE](https://arxiv.org/abs/2505.03771) is posted to arXiv.
   - date: 2026-08-17
     type: Poster
     content: >-
